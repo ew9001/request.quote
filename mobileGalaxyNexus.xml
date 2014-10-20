@@ -15,6 +15,19 @@
             </run>
         </groups>
     </test>
+    
+     <test name="ObjectExitTest simple example">
+        <parameter name="browser" value="mobileGalaxyS3"/>
+        <classes>
+            <class name="test.brand.metamucil.testPostLive"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
 </suite>
 
 
