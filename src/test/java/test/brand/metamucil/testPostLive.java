@@ -220,7 +220,7 @@ public class testPostLive {
 
 		    br = new BufferedReader(new FileReader(csvFileToRead));  
 		    
-		    driver.get("http://http://uat.metawellness.pgsitecore.com/");
+		    
 		  
 		    driver.findElement(By.id("phsmartphoneheader_0_phsmartphoneheaderright_0_imgNavigation")).click();
 		    
