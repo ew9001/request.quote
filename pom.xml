@@ -105,7 +105,8 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>${suiteFile}</suiteXmlFile>
+                        <suiteXmlFile>${suiteFile1}</suiteXmlFile>
+                        <suiteXmlFile>${suiteFile2}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
