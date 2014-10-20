@@ -704,7 +704,7 @@ public class testPostLive {
 	      System.out.println("Let me run mobileGalaxyNexus");
 	 
 
-	      driver.get("http://m.espn.com");
+	      driver.get("http://uat.metawellness.pgsitecore.com");
 	      
 	      
 	      return driver;
