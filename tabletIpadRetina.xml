@@ -1,0 +1,21 @@
+
+
+
+<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+ 
+<suite name="tabletIpadRetina" verbose="1">
+    <parameter name="param" value="Laramie"/>
+    <test name="ObjectExitTest simple example">
+        <parameter name="browser" value="tabletIpadRetina"/>
+        <classes>
+            <class name="test.lgnews.run.testPostLive"/>
+        </classes>
+ 
+        <groups>
+            <run>
+                <include name="create"/>
+            </run>
+        </groups>
+    </test>
+</suite>
+
