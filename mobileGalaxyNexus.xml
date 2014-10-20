@@ -3,12 +3,15 @@
  
 <suite name="Examples" verbose="1">
     <parameter name="param" value="Laramie"/>
-    <test name="ObjectExitTest simple example">
+    <test name="ObjectExitTest simple example 1">
         <parameter name="browser" value="mobileGalaxyNexus"/>
         <classes>
             <class name="test.brand.metamucil.testPostLive"/>
         </classes>
- 
+  <parameter name="browser" value="mobileGalaxyS3"/>
+        <classes>
+            <class name="test.brand.metamucil.testPostLive"/>
+        </classes>
         <groups>
             <run>
                 <include name="create"/>
@@ -16,18 +19,7 @@
         </groups>
     </test>
     
-     <test name="ObjectExitTest simple example">
-        <parameter name="browser" value="mobileGalaxyS3"/>
-        <classes>
-            <class name="test.brand.metamucil.testPostLive"/>
-        </classes>
- 
-        <groups>
-            <run>
-                <include name="create"/>
-            </run>
-        </groups>
-    </test>
+     
 </suite>
 
 
