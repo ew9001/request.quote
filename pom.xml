@@ -106,8 +106,8 @@
                 <version>2.12</version>
                 <configuration>
                     <suiteXmlFiles>
-                          <suiteXmlFile>mobileGalaxyS3.xml</suiteXmlFile>
-                        <suiteXmlFile>mobileGalaxyNexus.xml</suiteXmlFile>
+                        
+                        <suiteXmlFile>${tests}.xml</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
