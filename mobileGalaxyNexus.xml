@@ -8,6 +8,13 @@
         <parameter name="browser" value="mobileGalaxyNexus"/>
         <classes>
             <class name="test.brand.metamucil.testPostLive"/>
+            <methods>
+				<include name="order1" />
+				<include name="create" />
+				<!-- 
+					<exclude name="testMakeOrder" />
+				 -->
+			</methods>
         </classes>
  
         <groups>
