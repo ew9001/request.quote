@@ -57,146 +57,6 @@ public class testPostLive {
 	  {	   
 		  
 		  
-		  if (browser.equals("mobileGalaxyS3")) {
-			  driver=mobileGalaxyS3();
-			  csvFileToRead = data;
-			  
-			}
-		  
-
-		  else if (browser.equals("mobileLGnexus4")) {
-			  driver=mobileLGNexus4();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  else if (browser.equals("tabletKindleFire2")) {
-			  driver=  tabletKindleFire2();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("tabletKindleFireHD")) {
-			  driver=  tabletKindleFireHD();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("mobileGalaxyS2")) {
-			  driver=  mobileGalaxyS2();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("tabletGoogleNexus")) {
-			  driver=  tabletGoogleNexus();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		
-		  
-		  else if (browser.equals("mobileRazor")) {
-			  driver=mobileRazor();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("tabletSamsungGalaxyNote")) {
-			  driver=tabletSamsungGalaxyNote();
-			  csvFileToRead = data;
-			  System.out.println("Data is  " +data);
-			}
-		  
-		  else if (browser.equals("mobileRazorHD")) {
-			  driver=mobileRazorHD();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("mobileXperia")) {
-			  driver=mobileXperia();
-			  csvFileToRead = data2;
-			  System.out.println("Data is  " +data2);
-			}
-		  
-		  else if (browser.equals("mobileiPhone5S")) {
-			  driver=mobileiPhone5S();
-			   csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileiPhone5")) {
-			  driver=mobileiPhone5();
-			   csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileiPhone5C")) {
-			  driver=mobileiPhone5C();
-			   csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileHTCOneX")) {
-			  driver=mobileHTCOneX();
-			   csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileiPhone4S")) {
-			  driver=mobileiPhone4S();
-			  csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileHTCEveo3d")) {
-			  driver=mobileHTCEveo3d();
-			  csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileGalaxyNote2")) {
-			  driver=mobileGalaxyNote2();
-			  csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("mobileGalaxyNexus")) {
-			  driver=mobileGalaxyNexus();
-			  csvFileToRead = data;
-			}
-		  else if (browser.equals("mobileAtrixHD")) {
-			  driver=mobileAtrixHD();
-			  csvFileToRead = data;
-			}
-		  
-		  else if (browser.equals("safari")) {
-			  driver=browserSafari();
-			  csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("ie9")) {
-			  driver=browserIE9();
-			   csvFileToRead = data2;
-			}
-		  
-
-		  else if (browser.equals("iPad")) {
-			  driver=browserIpad();
-			}
-		  else if (browser.equals("firefox")) {
-			  driver=browserFirefox();
-			  csvFileToRead = data2;
-			}
-		  
-		  else if (browser.equals("Android")) {
-			  driver=browserAndroid();
-			}
-		  
-		  else if (browser.equals(" tabletIpadRetina")) {
-			  driver= tabletIpadRetina();
-			}
-		  
-		  else if (browser.equals("tabletIpadAir")) {
-			  driver=tabletIpadAir();
-			}
-		  
-		  else if (browser.equals("tabletIpad4thGen7")) {
-			  driver=tabletIpad4thGen7();
-			}
 		  
 		  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 		 
@@ -663,7 +523,7 @@ public class testPostLive {
 	      
 	      return driver;
 	 }
-	 
+	 @Test(groups="order2")
 	 public WebDriver mobileLGNexus4() throws MalformedURLException  
 	 {  
 	  
@@ -687,7 +547,7 @@ public class testPostLive {
 	      
 	      return driver;
 	 }
-	 
+	 @Test(groups="order1")
 	 public WebDriver mobileGalaxyNexus() throws MalformedURLException  
 	 {  
 	  
@@ -698,6 +558,7 @@ public class testPostLive {
 		 caps.setCapability("platform", "ANDROID");
 		 caps.setCapability("device", "Samsung Galaxy Nexus");
 		 caps.setCapability("browserstack.debug", "true");
+		 caps.setCapability("browserstack.local", "true");
 		 caps.setCapability("acceptSslCerts", "true");
 		    driver = new RemoteWebDriver(new URL(URL), caps);
 		    
