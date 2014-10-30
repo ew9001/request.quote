@@ -1,14 +1,17 @@
 
 
-<!DOCTYPE suite SYSTEM "http://beust.com/testng/testng-1.0.dtd" >
+
+
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="Examples" verbose="1">
-    <parameter name="param" value="Laramie"/>
-    <test name="ObjectExitTest simple example">
-   <!--      <parameter name="browser" value="mobileGalaxyNexus"/>-->
-        <classes>
-            <class name="test.brand.metamucil.testPostLive"/>
-            <methods>
+<suite name="TestAll">
+ 
+  <test name="order">
+	<classes>
+		<class name="test.brand.metamucil.testPostLive" />
+		
+			<methods>
 				<include name="order1" />
 				<include name="create" />
 				<include name="order2" />
@@ -17,21 +20,8 @@
 					<exclude name="testMakeOrder" />
 				 -->
 			</methods>
-        </classes>
+		</class>
+	</classes>
+  </test>
  
-        <groups>
-            <run>
-                <include name="create"/>
-            </run>
-        </groups>
-    </test>
 </suite>
-
-
-
-
-
-    
-
-
-
