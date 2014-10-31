@@ -53,10 +53,10 @@ public class testPostLive {
 	  @Test(groups = {"create"})
 	//	@Parameters({"browser"})
 	//  @BeforeClass
-	  public void beforeClass(String browser) throws IOException, InterruptedException
+	  public void action() throws IOException, InterruptedException
 	  {	   
 		  
-		  
+		  String browser ="location";
 		  
 		  String name=""+ browser+"/" + browser +"_"+ counter + "_" + "Successful-Completed-Capture.png";
 		 
