@@ -1,18 +1,18 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="TestAll">
+<suite name="TestAll 1">
  
   <test name="order">
 	<classes>
 		
-		<class name="test.brand.metamucil.testPostLive">
+		<class name="test.desktop.metamucil.Desktop">
 			<methods>
 			    <include name="order1" />
 				<include name="create" />
 				<include name="order2" />
 				<include name="create" />
 				<!-- 
-					<exclude name="testMakeOrder" />
+					<exclude name="testMakeOrder aas" />
 				 -->
 			</methods>
 		</class>
