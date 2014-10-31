@@ -52,7 +52,7 @@ public class testPostLive {
 	    String safe = "http://10.10.10.34:8080/job/TESTNG3/ws/PageLoads";
 	  @Test(groups = {"create"})
 		@Parameters({"browser"})
-	  @BeforeClass
+	//  @BeforeClass
 	  public void beforeClass(String browser) throws IOException, InterruptedException
 	  {	   
 		  

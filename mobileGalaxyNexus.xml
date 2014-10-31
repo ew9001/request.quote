@@ -5,7 +5,7 @@
   <test name="order">
 	<classes>
 		
-		<class name="test.desktop.metamucil.Desktop">
+		<class name="test.brand.metamucil.testPostLive">
 			<methods>
 			    <include name="order1" />
 				<include name="create" />
