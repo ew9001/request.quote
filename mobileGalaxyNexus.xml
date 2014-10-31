@@ -6,9 +6,6 @@
 	<groups>
 		<run>
 		<include name="order1" />
-				<include name="create" />
-				<include name="order2" />
-				<include name="create" />
 		</run>
 	</groups>
  
