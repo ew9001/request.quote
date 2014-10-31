@@ -1,21 +1,19 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
  
-<suite name="TestAll 1">
+<suite name="TestAll">
  
-  <test name="order">
-	<classes>
-		
-		<class name="test.brand.metamucil.testPostLive">
-			<methods>
-			    <include name="order1" />
+  <test name="database">
+	<groups>
+		<run>
+		<include name="order1" />
 				<include name="create" />
 				<include name="order2" />
 				<include name="create" />
-				<!-- 
-					<exclude name="testMakeOrder aas" />
-				 -->
-			</methods>
-		</class>
+		</run>
+	</groups>
+ 
+	<classes>
+		<class name="test.brand.metamucil.testPostLive" />
 	</classes>
   </test>
  
